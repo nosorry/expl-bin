@@ -1,3 +1,5 @@
+#!/bin/bash
+# @404death
 #make sure you run this script from same directory where passwd.txt shadow.txt reside
 # passwd.txt = /etc/passwd
 # shadow.txt = /etc/shadow
