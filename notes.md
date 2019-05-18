@@ -1,6 +1,6 @@
 ##### Copy files via rsync
 
-`rsync --rsh='ssh -p22000' <source folder> 10.11.1.232:~/ -r`
+`rsync --rsh='ssh -p22000' <source folder> 10.1.1.1:~/ -r`
 
 ##### Find password plain text
 
@@ -8,7 +8,7 @@
 
 ##### gobuster for quick directory search
 
-`gobuster -u 10.11.1.1 -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a Linux -x .txt,.asp,.php`
+`gobuster -u 10.1.1.1 -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a Linux -x .txt,.asp,.php`
 
 ##### Kill any tcp port being used
 
