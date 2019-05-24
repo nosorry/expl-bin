@@ -126,8 +126,8 @@
 
 #CTF <br>
 -https://blog.kartone.ninja/2019/03/25/when-a-reverse-me-ctf-binary-makes-you-loose-that-job/<br>
--https://gtfobins.github.io/gtfobins/whois/?fbclid=IwAR2BGMKkGj6FDit8h20UwvybkYMsFOmd17mt9ryB2u7pwQtwiC0L5e7ZzcY
--https://github.com/swisskyrepo/PayloadsAllTheThings?fbclid=IwAR0HOZxovFMKbW7eqZvByT_Wh_nqlNIs7b9X4XT7S13kuBniAoBgk1c2lio
+-https://gtfobins.github.io/gtfobins/whois/<br>
+-https://github.com/swisskyrepo/PayloadsAllTheThings<br>
 
 
 #study materials<br>
@@ -160,7 +160,7 @@
 
 #windows evasion / bypassing AV<br>
 -https://github.com/nccgroup/Winpayloads<br>
--https://null-byte.wonderhowto.com/how-to/hacking-windows-10-create-undetectable-payload-part-1-bypassing-antivirus-software-0185055/
+-https://null-byte.wonderhowto.com/how-to/hacking-windows-10-create-undetectable-payload-part-1-bypassing-antivirus-software-0185055/<br>
 -https://gbhackers.com/malicious-payload-evasion-techniques/<br>
 -http://www.powershellempire.com/?page_id=149<br>
 -https://gbhackers.com/bypassing-an-antivirus/<br>
