@@ -1,3 +1,11 @@
+##### find smb vuln in a network range.
+`nmap -A -p 139,445 10.1.1.1-254 -oG smb_service.txt`
+
+`cat smb_service.txt | grep -i windows | cut -d" " -f2 > smb_machines.txt`
+
+`for vul in $(find / -name smb*vuln*.nse | cut -d"/" -f 6); do nmap -v -p 139,445 --script=$vul -iL smb_machines.txt -oN smb_vulns_$vul.txt; done`
+
+
 ##### Copy files via rsync
 
 `rsync --rsh='ssh -p22000' <source folder> 10.1.1.1:~/ -r`
